@@ -13,5 +13,10 @@ export default ({ mode }) => {
     define: {
       "process.env": process.env,
     },
+    server: {
+      watch: {
+        usePolling: true,
+      },
+    },
   });
 };
