@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { ActionEvent } from "../interface";
 
-interface ActionProps<T = any> {
+interface ActionProps {
   events: ActionEvent[];
   setView: (prop: string) => void;
   removeView: (prop: string) => void;
