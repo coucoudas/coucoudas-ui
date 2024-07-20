@@ -19,16 +19,10 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
-
-    /* Build */
-    "outDir": "./build"
+    
+		/* Build */
+    "outDir": "./build",
   },
-  "include": [
-    "src",
-    "./eslintrc.json",
-    "tailwind.config.ts",
-    "setupPackage.js",
-    "src/interface/widget/index.ts"
-  ],
+  "include": ["src", "./eslintrc.json", "tailwind.config.ts", "setupPackage.js", "src/interface/widget/index.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
