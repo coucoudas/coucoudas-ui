@@ -1,1 +1,1 @@
-export { default as Action } from "./Action.tsx";
+export { default as Action } from "./Action";
