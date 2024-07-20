@@ -10,9 +10,7 @@ function copyDirectory(src, dest) {
   if (!fs.existsSync(dest)) {
     fs.mkdirSync(dest, { recursive: true });
   }
-
   const entries = fs.readdirSync(src, { withFileTypes: true });
-
   for (let entry of entries) {
     const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
@@ -24,7 +22,6 @@ function copyDirectory(src, dest) {
     }
   }
 }
-
 function main() {
   const distPath = path.join(__dirname, "dist");
   const styleCssPath = path.join(__dirname, "src/globals.css");
