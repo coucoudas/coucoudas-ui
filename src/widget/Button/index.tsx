@@ -1,16 +1,14 @@
-import { OnClick } from "../../interface";
+import { ButtonWidgetProps } from "../../interface";
 import { cn } from "../../util";
 
-interface ButtonWidgetProps {
-  title: string;
-  onClick: OnClick;
-}
-export default function Button({ title, onClick }: ButtonWidgetProps) {
+export default function Button({ title, onClick, option }: ButtonWidgetProps) {
+  const { width, className } = option ?? {};
   const container = {
-    sizes: "w-[335px] h-12",
-    backgrounds: "bg-black",
+    sizes: `${width ?? "w-[335px]"} h-12`,
+    backgrounds: "bg-gray-black",
     texts: "text-white",
     boundaries: "rounded-[6px]",
+    className,
   };
   return (
     <button onClick={onClick} className={cn(container)}>
