@@ -16,3 +16,5 @@ export type Titles = {
   titleColor?: string;
   subtitleColor?: string;
 };
+
+export type Condition = boolean | ((value: string) => boolean);
