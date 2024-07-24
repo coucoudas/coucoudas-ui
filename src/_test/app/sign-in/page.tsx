@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { cn } from "../../../util";
-import { Button, Input } from "../../../widget";
+import { Button, CheckBox, Input } from "../../../widget";
 
 export default function SignIn() {
   const [username, setUsername] = useState<string>();
   const [password, setPassword] = useState<string>();
+  const [autoLogin, setAutoLogin] = useState<boolean>(false);
 
   const layout = {
     displays: "flex flex-col justify-center items-center",
@@ -24,8 +25,12 @@ export default function SignIn() {
         <Input
           title="비밀번호"
           state={[password, setPassword]}
+          isValid={(value) => value.length >= 8}
+          notifications={[[(value) => value.length < 8, { title: "ㄴㄴ" }]]}
           placeholder="비밀번호를 입력해주세요."
+          type="password"
         />
+        <CheckBox title="자동 로그인" state={[autoLogin, setAutoLogin]} />
         <Button title="로그인 하기" onClick={() => {}} />
       </div>
     </div>
