@@ -5,6 +5,10 @@ interface ButtonWidgetProps {
   onClick: OnClick;
   option?: {
     width?: string;
+    height?: string;
+    background?: string;
+    boundaries?: string;
+    text?: string;
     className?: string;
   };
 }
