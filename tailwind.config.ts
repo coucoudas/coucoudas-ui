@@ -4,6 +4,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        "pretendard-medium": ["pretendard-medium"],
+        "pretendard-bold": ["pretendard-bold"],
+        "pretendard-light": ["pretendard-light"],
+        kostar: ["kostar"],
+        nicomoji: ["nicomoji"],
+        megrim: ["megrim"],
+        "times-newer-roman-bold": ["times-newer-roman-bold"],
+        "times-newer-roman-bolditalic": ["times-newer-roman-bolditalic"],
+      },
       colors: {
         "gray-50": "#F8F9FA",
         "gray-100": "#F1F3F5",
