@@ -8,9 +8,10 @@ export default function Test() {
   };
   return (
     <div className={cn(container)}>
-      <Button bg="brand.900" _hover={{ bg: "brand.100" }}>
+      <button className="font-pretendard-bold">안녕ㅋ</button>
+      {/* <Button bg="brand.900" _hover={{ bg: "brand.100" }}>
         Button
-      </Button>
+      </Button> */}
     </div>
   );
 }
